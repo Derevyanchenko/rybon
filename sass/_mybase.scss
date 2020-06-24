@@ -1,0 +1,54 @@
+// my styles (Danil)
+
+body, html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1430px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+}
+
+.input-number__minus {
+    margin-left: 9px;
+    margin-right: 6px;
+}
+
+.input-number__minus,
+.input-number__plus {
+    width: 27px;
+    height: 27px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    color: #222222;
+    border: 1px solid #222222;
+    border-radius: 50%;
+}
+
+.input-number__controls {
+    display: flex;
+    align-items: center;
+}
+
+.btn_arrow {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 60px;
+    &:after {
+        content: "";
+        width: 23px;
+        height: 16px;
+        background: url("../img/invest-arrow.svg") no-repeat;
+        display: block;
+        top: 23px;
+        right: 25px;
+        position: absolute;
+
+    }
+}
