@@ -49,6 +49,15 @@
         &:hover {
             text-decoration: underline;
         }
+        &-wrapper {
+            margin-top: 54px;
+            font-size: 18px;
+            line-height: 22px;
+            .auth__switch {
+                margin-top: 0;
+                display: inline-block;
+            }
+        }
     }
 
     &__close {
@@ -91,7 +100,7 @@
         line-height: 31px;
         margin-bottom: 64px;
     }
-    
+
     .auth .forgot_pass {
         font-size: 16px;
         line-height: 22px;
@@ -109,6 +118,12 @@
         padding: 0;
         font-size: 16px;
         line-height: 53px;
+    }
+
+    .auth__switch-wrapper {
+        margin-top: 35px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
 }
@@ -152,6 +167,12 @@
             max-width: 100%;
             height: auto;
         }
+    }
+
+    .auth__switch-wrapper {
+        margin-top: 32px;
+        font-size: 14px;
+        line-height: 19px;
     }
 
 }

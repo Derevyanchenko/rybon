@@ -352,7 +352,7 @@
 						<p class="review_block__text">Sunt ut elit incididunt exercitation nostrud reprehenderit non ut adipisicing exercitation enim sit. Ex adipisicing eiusmod ad dolore. </p>
 					</div>
 				</div>
-				<p class="center"><a href="#" class="btn btn_dark">Add a review</a></p>
+				<p class="center"><a href="#" class="btn btn_dark add-review-js">Add a review</a></p>
 			</div>
 		</section>
 
@@ -398,11 +398,41 @@
 			</div>
 			<div class="foot_bot"><p>Copyright rybon.cc © 2020. All rights reserved</p></div>
 		</footer>
+		<div class="overlay_popup">
+			<div class="popup">
+				<div class="popup__wrapper">
+					<div class="popup__close"><img src="img/popup-close.svg" alt=""></div>
+					<p class="popup__title">Leave a comment</p>
+					<form action="#" class="popup__form">
+
+						<div class="popup__form-row">
+							<div class="md-form col-6">
+								<input type="text" id="YourName" class="form-control">
+								<label for="YourName">Your name</label>
+								<span class="md-form__icon"></span>
+							  </div>
+							  
+							  <div class="md-form col-6">
+								<input type="text email" id="EmailAdress" class="form-control">
+								<label for="EmailAdress">E-mail address</label>
+								<span class="md-form__icon"></span>
+							  </div>
+						</div>
+
+						  <div class="md-form">
+							<textarea name="" id="YourComment" cols="1" rows="5"></textarea>
+							<label for="YourComment">Comment</label>
+						  </div>
+	
+						 <button class="btn">Send</button>
+						 
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- // overlay -->
 	</div>
 
-	<div class="overlay">
-		
-	</div>
 
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 

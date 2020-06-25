@@ -6,9 +6,9 @@ body, html {
 
 .container {
     max-width: 1430px;
-    width: 100%;
     padding: 0 10px;
     margin: 0 auto;
+    flex-grow: 1;
 
 }
 
@@ -53,6 +53,29 @@ body, html {
 
     }
 }
+
+.secondaryHeader {
+    height: 610px;
+    background-image: url(../img/secondary-page-bg.jpg);
+    background-position: center;
+    padding: 0;
+}
+
+.secondaryHeader__title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 83px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0;
+}
+
+.secondaryContent {
+    padding: 150px 0;
+    background: url(../img/reviews-bg.png) no-repeat calc(0% - 40px) calc(100% + 120px);
+}
+
+
 
 // form fields
 
@@ -104,7 +127,8 @@ body, html {
 }
 
 
-.md-form input {
+.md-form input,
+.md-form textarea  {
     width: 100%;
     padding: 16px 25px;
     padding-right: 46px;
@@ -119,7 +143,19 @@ body, html {
     color: #fff;
     background-clip: padding-box;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    font-family: "Open Sans", sans-serif;
 }
+
+
+.md-form textarea {
+    height: 136px !important;
+    width: 100% !important;
+    border: 2px solid #000E39;
+    color: #222222;
+    user-select: none;
+    outline: none;
+}
+
 
 .md-form {
     position: relative;
@@ -139,8 +175,8 @@ body, html {
 }
 
 .md-form.validate_true {
-   input {
-    border: 2px solid #DFB66C;
+   input, textarea {
+    border: 2px solid #DFB66C !important;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
    }
     .md-form__icon {
@@ -182,10 +218,93 @@ body, html {
 } 
 
 
+// checkbox
+
+
+.checkbox__wrapper {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+  }
+  
+  .checkbox__text {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    text-align: left;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 25px;
+    a {
+        color: #DFB66C;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+  }
+  
+  .checkbox__text:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-color: transparent;
+    border: 2px solid #DFB66C;
+  }
+  
+  .checkbox input:checked+.checkbox__text:after {
+    display: block;
+  }
+  
+  .checkbox__text:after {
+    content: '';
+    display: none;
+    left: 5px;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 2px solid #dfb66c;
+    border-bottom: 2px solid #dfb66c;
+    position: absolute;
+    top: -2px;
+    // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    color: #f3f3f3;
+    text-align: center;
+    width: 10px;
+    height: 18px;
+    right: 0;
+  }
+  
+
 
 
 
 // media queries
+
+
+@media (max-width: $xl) {
+    .secondaryContent {
+        padding: 125px 0;
+    }
+}
+
 
 @media (max-width: $lg) {
 
@@ -193,6 +312,37 @@ body, html {
         font-size: 16px;
         line-height: 22px;
     }
+
+    .md-form label {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .checkbox__wrapper {
+        margin-top: 20px;
+        margin-bottom: 37px;
+    }
+
+    .checkbox__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .secondaryHeader {
+        height: 280px;
+    }
+    
+    .secondaryHeader__title {
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+    .secondaryContent {
+        padding: 100px 0;
+        background: url(../img/reviews-bg.png) no-repeat calc(0% - 40px) calc(100% + 120px);
+        background-size: 42%;
+    }
+    
     
 
 }
@@ -209,9 +359,42 @@ body, html {
         line-height: 20px;
     }
 
+    .md-form label {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
     .md-form label.active {
         font-size: 15px;
         line-height: 20px;
     }
+
+    .checkbox__wrapper {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .checkbox__text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .md-form textarea {
+        height: 120px !important;
+    }
+
+    .secondaryHeader {
+        height: 204px;
+    }
+    
+    .secondaryHeader__title {
+        font-size: 36px;
+        line-height: 47px;
+    }
+
+    .secondaryContent {
+        padding: 75px 0;
+    }
+    
 
 }

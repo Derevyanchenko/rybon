@@ -1,0 +1,167 @@
+// info pages
+
+.info_content {
+    padding: 150px 0;
+    background: url(../img/reviews-bg.png) no-repeat calc(0% - 40px) calc(100% + 120px);
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 47px;
+        color: #000E39;
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        padding-bottom: 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        color: #000E39;
+        margin-bottom: 15px;
+    }
+
+    &__wrapper {
+    
+        p {
+            font-size: 18px;
+            line-height: 25px;
+            color: #222222;
+            margin: 0;
+            margin-bottom: 18px;
+        }
+    
+        br {
+            padding: 14px 0;
+            display: block;
+        }
+
+        b {
+            font-weight: 400;
+            display: block;
+            font-size: 22px;
+            line-height: 30px;
+            color: #000E39;
+            margin-bottom: 5px;
+        }
+    
+        ol {
+            padding-left: 23px;
+            li {
+                margin-bottom: 10px;
+                font-size: 18px;
+                line-height: 25px;
+                color: #222222;
+            }
+        }
+
+        ul {
+            padding-left: 36px;
+            li {
+                margin-bottom: 10px;
+                font-size: 18px;
+                line-height: 25px;
+                color: #222222;
+                position: relative;
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background: #DFB66C;
+                    border-radius: 50%;
+                    left: -22px;
+                    top: 8px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+
+@media (max-width: $xl) {
+    .info_content {
+        padding: 125px 0;
+    }
+}
+
+
+
+
+@media (max-width: $lg) {
+    .info_content {
+        padding: 100px 0;
+        background: url(../img/reviews-bg.png) no-repeat calc(0% - 40px) calc(100% + 47px);
+        background-size: 28%;
+    }
+
+    .info_content__title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .info_content__wrapper p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .info_content__wrapper ol li,
+    .info_content__wrapper ul li {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .info_content__subtitle {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .info_content__wrapper b {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+}
+
+
+
+
+@media (max-width: $md) {
+    .info_content {
+        padding: 75px 0;
+    }
+
+    .info_content__title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .info_content__wrapper p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .info_content__wrapper ol li,
+    .info_content__wrapper ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .info_content__subtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .info_content__wrapper b {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+}
+
+
+
+
