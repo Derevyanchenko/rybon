@@ -97,6 +97,15 @@
 
   // media queries
 
+  @media (max-width: $lg) {
+
+    .popup__title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+  }
+
   @media (max-width: $md) {
 
     .popup__form {
@@ -119,8 +128,8 @@
     }
 
     .popup__title {
-        font-size: 25px;
-        line-height: 34px;
+      font-size: 18px;
+      line-height: 23px;
         margin-bottom: 30px;
     }
 
