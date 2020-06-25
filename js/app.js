@@ -30,6 +30,59 @@ jQuery(($) => {
 
 });
 
+// add input class in focus
+
+$(".md-form input").on("focus", function() {
+
+    if( this.value.trim() == '' ) {
+        $(this).next().addClass("active");
+    }
+
+});
+
+// hide/show password
+
+$(".md-form.password .md-form__icon").on("click", function() {
+
+    let input = $(this).siblings("input");
+
+
+    if (input.attr('type') == 'password'){
+
+
+		$(this).parent().addClass('view');
+        input.prop('type', 'text');
+        
+	} else {
+
+		$(this).parent().removeClass('view');
+        input.prop('type', 'password');
+        
+	}
+	return false;
+
+});
+
+// remove input class in focus
+
+$(".md-form input").on("blur", function() {
+
+    if( this.value.trim() == '' ) {
+        $(this).next().removeClass("active");
+    }
+    
+    // form field validate 
+
+    if( this.value.trim() !== '' ) {
+        $(this).parent().addClass("validate_true");
+    } else {
+        $(this).parent().removeClass("validate_true");
+    }
+
+});
+
+
+
 
 $(window).on("load resize", function () {
     // scheme wrapper
@@ -89,6 +142,7 @@ $(window).on("load resize", function () {
         });
 
     }
+    
 
 
     
