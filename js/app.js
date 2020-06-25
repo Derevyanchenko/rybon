@@ -143,6 +143,12 @@ $(".faq__item-top").on("click", function() {
 
 });
 
+// input type tel
+
+$('input[type=tel]').on('input', function() {
+    $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
+});
+
 
 
 

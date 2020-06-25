@@ -3605,6 +3605,10 @@ html {
   margin-bottom: 42px;
 }
 
+.contacts__details-item:last-child {
+  margin-bottom: 0;
+}
+
 .contacts__details-icon {
   width: 35px;
   margin-right: 20px;
@@ -3618,4 +3622,36 @@ html {
   font-size: 24px;
   line-height: 33px;
   color: #222222;
+}
+
+.contacts__details-title b {
+  display: block;
+}
+
+.contacts__details-social {
+  margin-top: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.contacts__details-social a {
+  margin-right: 38px;
+  display: block;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contacts__details-social a:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: .7;
+}
+
+.contacts__details-social a img {
+  max-width: 100%;
 }

@@ -44,6 +44,9 @@
         display: flex;
         align-items: center;
         margin-bottom: 42px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &-icon {
         width: 35px;
@@ -58,16 +61,25 @@
         line-height: 33px;
         color: #222222;
         b {
-
+            display: block;
         }
     }
 
     &-social {
-
+        margin-top: 103px;
+        display: flex;
+        align-items: flex-end;
         a {
-
+            margin-right: 38px;
+            display: block;
+            opacity: 1;
+            transition: all 0.3s;
+            &:hover {
+                transition: all 0.3s;
+                opacity: .7;
+            }
             img {
-
+                max-width: 100%;
             }
         }
     }
