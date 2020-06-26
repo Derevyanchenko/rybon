@@ -1,41 +1,101 @@
 // about
 
 .about__title {
-
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 70px;
+    color: #000E39;
+    padding-bottom: 0;
 }
 
 .about__text {
-    
+    font-size: 18px;
+    line-height: 26px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.aboutSection_mb {
+    margin-bottom: 150px;
 }
 
 // aboutChallenge block 1
 
 
 .aboutChallenge {
-
+    display: flex;
+    align-items: center;
     .col-6 {
-
+        max-width: 50%;
+        flex: 0 0 50%;
     }
 
     &__gallery {
+        display: flex;
+        flex-direction: column;
+        &-col {
+            &-1 {
+                display: flex;
 
-        &-item {
+                .aboutChallenge__gallery-item {
+                    &:first-child {
+                        margin-right: 30px;
+                        max-width: 254px;
+                        height: 254px;
+                        margin-bottom: 30px;
+                    }
 
-            img {
+                    &:last-child {
+                        max-width: 405px;
+                        height: 254px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            &-2 {
+
+                .aboutChallenge__gallery-item {
+                    max-width: 690px;
+                    height: 227px;
+                }
 
             }
+        }
+        &-item {
+            border-radius: 10px;
+            img {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            // &:first-child {
+            //     margin-right: 30px;
+            //     max-width: 254px;
+            //     height: 254px;
+            //     margin-bottom: 30px;
+            // }
+            // &:nth-child(2) {
+            //     max-width: 405px;
+            //     height: 254px;
+            //     margin-bottom: 30px;
+            // }
+            // &:last-child {
+            //     max-width: 100%;
+            //     height: 227px;
+            // }
         }
     }
 
     &__content {
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10px;
         .about__title {
-
+            margin-bottom: 10px;
         }
-        .about__text {
-
-        }
-
     }
 
 }
@@ -46,33 +106,46 @@
 .aboutWhy {
 
     .about__title {
-
+        text-align: center;
+        margin-bottom: 35px;
     }
 
     .about__text {
-
+        text-align: center;
+        margin-bottom: 70px;
     }
 
     &__wrapper {
-
-
+        display: flex;
+        justify-content: space-between;
     }
 
     &__box {
+        max-width: 360px;
+        flex-grow: 1;
+        text-align: center;
 
         &-img {
-
+            height: 69px;
+            margin-bottom: 32px;
             img {
-
+                max-width: 100%;
+                height: auto;
             }
         }
 
         &-title {
-
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            color: #000E39;
+            margin-bottom: 14px;
         }
 
         &-text {
-
+            font-size: 18px;
+            line-height: 25px;
+            color: #222222;
         }
     }
 
@@ -82,30 +155,62 @@
 // aboutOffer block 3
 
 
-.aboutOffer {
+.aboutOffer {  
+    display: flex;
+    align-items: center;
 
-    .about__title {
-
-    }
-
-    .about__text {
-
+    .col-6 {
+        max-width: 50%;
+        flex: 0 0 50%;
     }
 
     &__content {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 30px;
+        .about__title {
+            margin-bottom: 10px;
+        }
     }
-
     &__gallery {
+        display: flex;
+        &-col {
+            &-1 {
 
-        &-item {
+                .aboutOffer__gallery-item {
+                    max-width: 335px;
+                    height: 493px;
+                    margin-right: 30px;
+                }
+            }
+            &-2 {
 
-            img {
+                .aboutOffer__gallery-item {
+                    max-width: 329px;
+                    &:first-child {
+                        margin-bottom: 30px;
+                        height: 254px;
+                    }
+
+                    &:last-child {
+                        height: 209px;
+                    }
+                }
 
             }
         }
+        &-item {
+            border-radius: 10px;
+            img {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
     }
-
 }
 
 
@@ -113,24 +218,54 @@
 
 
 .aboutPartners {
-
+    text-align: center;
     .about__title {
-
-    }
+        margin-bottom: 30px;
+    }  
 
     .about__text {
-
+        margin-bottom: 100px;
     }
 
     &__wrapper {
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__box {
-
+        text-align: center;
+        margin-right: 70px;
+        &:last-child {
+            margin-right: 0;
+        }
         img {
-            
+            max-width: 100%;
         }
     }
+
+}
+
+
+
+// media queries
+
+@media (max-width: $xl) {
+
+
+
+}
+
+
+@media (max-width: $lg) {
+
+    
+
+}
+
+
+@media (max-width: $md) {
+
+    
 
 }
