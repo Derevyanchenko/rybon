@@ -224,7 +224,17 @@ $('.slider_reviews').slick({
     arrows:true,
     slidesToShow: 3,
     responsive: [
-    {
+        {
+            breakpoint: 1199.98,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: true,
+                dots: false
+            }
+        },
+        {
             breakpoint: 991.98,
             settings: {
                 slidesToShow: 2,
@@ -236,6 +246,16 @@ $('.slider_reviews').slick({
         },
         {
             breakpoint: 767.98,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: false,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 529.98,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,

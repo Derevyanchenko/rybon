@@ -147,6 +147,9 @@ h6{
     margin:auto;
 }
 
+.logo_block .soc_links a {
+    display: flex;
+}
 
 .center{
     text-align:center;
@@ -251,8 +254,8 @@ header .flex_block{
     justify-content: space-between;
 }
 .advant_section .flex_block{
-    background: #fff;
-    border-radius: 10px;
+    // background: #fff;
+    // border-radius: 10px;
     padding: 30px 55px;
 
 }
@@ -695,6 +698,21 @@ footer .flex_block{
     display: none;
 }
 
+.advant__wrapper {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.advant_items-box {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+
+
 // media queries
 
 @media (max-width: $xxl) {
@@ -718,7 +736,34 @@ footer .flex_block{
     .about_us {
         padding-top: 50px;
     }
+
+    .block_round {
+        min-height: 134px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .block_round10 {
+        padding-right: 55px;
+    }
+
+    .block_round03 {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .block_round02 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
 }
+
+
 
 
 @media (max-width: $xl) {
@@ -811,10 +856,10 @@ footer .flex_block{
 
     // inv plan
 
-    .text_title p {
-        font-size: 26px;
-        line-height: 34px;
-    }
+    // .text_title p {
+    //     font-size: 26px;
+    //     line-height: 34px;
+    // }
 
     .plan_content {
         padding: 30px;
@@ -850,6 +895,11 @@ footer .flex_block{
         .slick-next {
             right: -40px;
         }
+    }
+
+    .block_round {
+        padding-right: 20px;
+        padding-left: 100px;
     }
 
 }
@@ -922,7 +972,7 @@ footer .flex_block{
      // about us
 
      .section__title {
-        font-size: 36px;
+        font-size: 40px;
         line-height: 47px;
     }
 
@@ -1057,18 +1107,18 @@ footer .flex_block{
                     width: 100%;
                     height: 3px;
                     border-radius: 1px;
-                    background: #DFB66C;
+                    background: #000E39;
                 }
             }
         }
         .slick-dots li.slick-active button:before {
-            background: #000E39;
+            background: #DFB66C;
         }
     }
 
     .text_title p {
-        font-size: 24px;
-        line-height: 31px;
+        font-size: 28px;
+        line-height: 33px;
     }
 
     .plan {
@@ -1281,6 +1331,18 @@ footer .flex_block{
         }
     }
 
+    .block_round {
+        justify-content: flex-start;
+        flex-direction: row;
+        display: block;
+    }
+
+    .advant_items-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+
 }
 
 
@@ -1366,14 +1428,13 @@ footer .flex_block{
      // about us
 
      .section__title {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 32px;
+        line-height: 40px;
     }
 
      .aboutUs__title--mob {
         display: block;
         width: 100%;
-        font-weight: 500;
         font-size: 28px;
         line-height: 36px;
         color: #000E39;
@@ -1397,6 +1458,7 @@ footer .flex_block{
     margin-bottom: 25px;
     img {
         max-width: 360px;
+        width: 100%;
     }
    }
 
@@ -1443,7 +1505,6 @@ footer .flex_block{
     .best_invest p {
        font-size: 14px;
        line-height: 20px;
-       padding-left: 5px;
     }
 
     // invest plan
@@ -1568,6 +1629,10 @@ footer .flex_block{
         height: 99px;
         position: absolute;
         left: -45px;
+        font-size: 22px !important;
+        line-height: 26px !important;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .block_round p {
@@ -1590,7 +1655,7 @@ footer .flex_block{
     }
     
     .review_block {
-        margin: 0 1px;
+        margin: 0 7px;
         padding: 20px;
     
        .review_avtor img {
@@ -1651,9 +1716,9 @@ footer .flex_block{
 
     // footer
 
-    .footer__menu {
-        display: none;
-    }
+    // .footer__menu {
+    //     display: none;
+    // }
 
     .logo_block img {
         max-width: 78px;
@@ -1667,9 +1732,9 @@ footer .flex_block{
         margin-right: 7px;
     }
 
-    footer .flex_block {
-        align-items: center;
-    }
+    // footer .flex_block {
+    //     align-items: center;
+    // }
 
     .soc_links {
         margin-top: 15px;
@@ -1694,6 +1759,56 @@ footer .flex_block{
         line-height: 21px;
     }
 
+    .advant_items {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .advant_items-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 162px;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+}
+
+
+
+@media (max-width: 630px) {
+
+        
+    footer .flex_block {
+        align-items: center;
+    }
+
+    .footer__menu {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 583px) {
+
+        
+    .best_invest .section__title {
+        padding-bottom: 12px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 530px) {
+
+        
+    .review_block {
+        margin: 0 2px;
+        padding: 20px;
+    }
 
 }
 
