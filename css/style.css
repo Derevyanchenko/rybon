@@ -2625,6 +2625,11 @@ footer .flex_block {
   }
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1430px;
   padding: 0 10px;
@@ -5091,8 +5096,64 @@ footer .flex_block {
   }
 }
 
-button,
-a {
+button:not(.slick-arrow),
+a:not(.slick-arrow) {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.login_btn:hover,
+.singup_btn:hover,
+.btn_border:hover {
+  background: #DFB66C;
+  color: #010E39;
+}
+
+.btn_orange:hover {
+  background: #fff;
+  color: #010E39;
+}
+
+.btn_arrow:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.add-review-js:hover {
+  background: #011A67;
+}
+
+footer ul li a:hover {
+  border-bottom: 2px solid #DFB66C;
+}
+
+.soc_links a:hover {
+  opacity: 0.7;
+}
+
+.input-number__plus,
+.input-number__minus {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.input-number__plus:hover,
+.input-number__minus:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.news__watchMore:hover {
+  background: #DFB66C;
+  color: #010E39;
+}
+
+.popup__form .btn:hover {
+  background: #011A67;
+  color: #fff;
+}
+
+.auth .btn:hover {
+  background: #fff;
+  color: #010E39;
 }
