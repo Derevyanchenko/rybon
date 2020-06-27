@@ -250,6 +250,10 @@
 
 }
 
+.about__title.mob {
+    display: none;
+}
+
 
 
 // media queries
@@ -374,8 +378,227 @@
 }
 
 
+
+
 @media (max-width: $md) {
 
+
+    .about__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .about__text {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+
+    .aboutSection_mb {
+        margin-bottom: 75px;
+    }
+
     
+    .aboutChallenge {
+        flex-direction: column;
+    }
+
+    .aboutChallenge .col-6 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .aboutChallenge__gallery {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .aboutChallenge__gallery-col-1 {
+        flex-grow: 1;
+    }
+
+    .aboutChallenge__gallery-col-1 .aboutChallenge__gallery-item:first-child {
+        margin-right: 10px;
+        max-width: 180px;
+        height: 140px;
+        margin-bottom: 10px;
+    }
+
+    .aboutChallenge__gallery-col-1 .aboutChallenge__gallery-item:last-child {
+        height: 140px;
+        margin-bottom: 10px;
+    }
+
+    .aboutChallenge__gallery-col-2 .aboutChallenge__gallery-item {
+        height: 123px;
+    }
+
+    .aboutWhy {
+        margin-bottom: 75px;
+    }
+    
+    .aboutWhy .about__title {
+        text-align: left;
+    }
+
+    .aboutWhy .about__text {
+        text-align: left;
+        margin-bottom: 50px;
+        br {
+            display: none;
+        }
+    }
+
+    .aboutWhy__wrapper {
+        flex-direction: column;
+    }
+
+    .aboutWhy__box {
+        margin-bottom: 39px;
+        display: flex;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .aboutWhy__box-img {
+        height: 55px;
+        width: 55px;
+        flex-shrink: 0;
+        margin-bottom: 0;
+        margin-right: 25px;
+    }
+
+    .aboutWhy__box-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .about__title.pc {
+        display: none;
+    }
+
+    .about__title.mob {
+        display: block;
+    }
+
+
+    .aboutChallenge .about__title {
+        margin-bottom: 50px;
+    }
+
+    .aboutOffer .about__title {
+        margin-bottom: 50px;
+    }
+
+    // about offer
+
+    .aboutOffer {
+        flex-direction: column-reverse;
+    }
+
+    .aboutOffer .col-6 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .aboutOffer__gallery {
+        padding-right: 0;
+        margin-bottom: 25px;
+        max-width: 532px;
+    }
+
+    .aboutOffer__gallery-col-1 {
+        flex-grow: 1;
+    }
+
+    .aboutOffer__gallery-col-2 .aboutOffer__gallery-item:first-child {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        height: 150px;
+        max-width: 193px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+
+    .aboutOffer__gallery-col-2 .aboutOffer__gallery-item:last-child {
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .aboutOffer__gallery-col-1 .aboutOffer__gallery-item {
+        height: 163px;
+    }
+
+    .aboutOffer__content {
+        padding-right: 0;
+    }
+
+    // about partners
+
+    .aboutPartners .about__title {
+        text-align: left;
+    }
+
+    .aboutPartners .about__text {
+        text-align: left;
+    }
+
+    .aboutPartners .about__text {
+        margin-bottom: 50px;
+    }
+
+    .aboutPartners__box {
+        text-align: center;
+        margin-right: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 71px;
+        text-align: center;
+        padding: 8px 20px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
+
+    .aboutPartners__box img {
+        max-width: 100%;
+        max-height: 71px;
+        height: auto;
+    }
+
+    .aboutPartners .about__text {
+        br {
+            display: none;
+        }
+    }
+
+    .aboutPartners__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        padding-bottom: 50px;
+    }
+
+    .aboutOffer {
+        margin-bottom: 63px;
+    }
+
+    .aboutOffer .col-6 {
+        width: 100%;
+    }
+
+    .aboutChallenge__gallery {
+        max-width: 595px;
+    }
+
+    .aboutChallenge .col-6 {
+        width: 100%;
+    }
 
 }
