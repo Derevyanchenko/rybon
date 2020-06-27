@@ -1,7 +1,7 @@
 // about
 
 .about__title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 54px;
     line-height: 70px;
     color: #000E39;
@@ -347,8 +347,8 @@
     }
 
     .aboutWhy__box-title {
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 24px;
         white-space: nowrap;
         margin-bottom: 10px;
     }
@@ -456,6 +456,8 @@
     .aboutWhy__box {
         margin-bottom: 39px;
         display: flex;
+        max-width: 100%;
+        margin-right: 0;
         &:last-child {
             margin-bottom: 0;
         }
@@ -599,6 +601,10 @@
 
     .aboutChallenge .col-6 {
         width: 100%;
+    }
+
+    .aboutWhy__box-title {
+        white-space: normal;
     }
 
 }

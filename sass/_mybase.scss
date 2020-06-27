@@ -1,8 +1,8 @@
 // my styles (Danil)
 
-body, html {
-    overflow-x: hidden;
-}
+// body, html {
+//     overflow-x: hidden;
+// }
 
 .container {
     max-width: 1430px;
@@ -182,6 +182,13 @@ body, html {
     }
 }
 
+.md-form {
+    input.active, textarea.active {
+     border: 2px solid #DFB66C !important;
+     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    }
+}
+
 .md-form.validate_true {
    input, textarea {
     border: 2px solid #DFB66C !important;
@@ -272,7 +279,7 @@ body, html {
   .checkbox__text:before {
     content: '';
     position: absolute;
-    top: 0px;
+    top: 3px;
     left: 0;
     width: 16px;
     height: 16px;
@@ -296,14 +303,16 @@ body, html {
     border-right: 2px solid #dfb66c;
     border-bottom: 2px solid #dfb66c;
     position: absolute;
-    top: -2px;
+    top: auto;
     // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     font-size: 14px;
     color: #f3f3f3;
     text-align: center;
-    width: 10px;
-    height: 18px;
-    right: 0;
+    width: 6px;
+    height: 13px;
+    left: 7px;
+    right: auto;
+    bottom: 6px;
   }
   
 
@@ -356,8 +365,14 @@ body, html {
         background: url(../img/reviews-bg.png) no-repeat calc(0% - 40px) calc(100% + 120px);
         background-size: 42%;
     }
+
+    .flexible_container {
+        max-width: 740px;
+    }
     
-    
+    .checkbox__text:after {
+        bottom: 6px;
+    }
 
 }
 
@@ -410,6 +425,31 @@ body, html {
     .secondaryContent {
         padding: 75px 0;
     }
-    
 
+    .flexible_container {
+        max-width: 567px;
+    }
+    
+    .checkbox__text:after {
+        bottom: 4px;
+    }
+
+    .checkbox__text:before {
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    .flexible_container {
+        max-width: 460px;
+    }
+    
+}
+
+@media (max-width: 479px) {
+    .flexible_container {
+        max-width: 360px;
+    }
+    
 }

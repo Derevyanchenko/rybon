@@ -60,6 +60,7 @@ $(".md-form input, .md-form textarea").on("focus", function() {
 
     if( this.value.trim() == '' ) {
         $(this).next().addClass("active");
+        $(this).addClass("active");
     }
 
 });
@@ -71,6 +72,7 @@ $(".md-form input, .md-form textarea").on("blur", function() {
 
     if( this.value.trim() == '' ) {
         $(this).next().removeClass("active");
+        $(this).removeClass("active");
     }
     
     // form field validate 
@@ -120,7 +122,9 @@ $(document).mouseup(function (event) {
 
 // faq
 
-$(".faq__item-top").on("click", function() {
+$(".faq__item-top").on("click", function(e) {
+
+    e.preventDefault();
 
     let
         that = $(this),
@@ -140,6 +144,8 @@ $(".faq__item-top").on("click", function() {
         submenu.slideUp(300)
         that.siblings(submenu).slideDown(300);
     }
+
+    return false;
 
 });
 

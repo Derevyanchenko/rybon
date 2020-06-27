@@ -7,13 +7,13 @@
     padding-right: 45px;
     margin-bottom: 35px;
     transition: background-color 0.3s ease;
+    cursor: pointer;
   }
   
   .faq__item-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
@@ -181,3 +181,11 @@
   
   }
   
+
+  .faq__item-top {
+    &:focus,
+    &:active {
+      outline: none !important;
+    user-select: none !important;
+    }
+  }

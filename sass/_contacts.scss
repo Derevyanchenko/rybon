@@ -87,6 +87,12 @@
 }
 
 
+.contacts__details-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 // media queries
 
 
@@ -145,6 +151,9 @@
         width: 22px;
         height: 30px;
         margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .contacts__details-title {
@@ -195,10 +204,16 @@
         }
     }
 
-
-
+    .contacts__details-item  {
+        &:nth-child(2) {
+            .contacts__details-icon img {
+                max-width: 17px !important;
+            }
+        }
+    }
 
 }
+
 
 @media (max-width: $md) {
 
