@@ -4507,3 +4507,125 @@ html {
 .aboutPartners__box img {
   max-width: 100%;
 }
+
+@media (max-width: 1200px) {
+  .aboutSection_mb {
+    margin-bottom: 125px;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutSection_mb {
+    margin-bottom: 100px;
+  }
+
+  .about__title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .aboutChallenge__gallery {
+    padding-right: 12px;
+  }
+
+  .aboutChallenge__gallery-col-1 .aboutChallenge__gallery-item:first-child {
+    margin-right: 12px;
+    max-width: 155px;
+    height: 235px;
+    margin-bottom: 12px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+
+  .aboutChallenge__gallery-col-1 .aboutChallenge__gallery-item:last-child {
+    height: 235px;
+    margin-bottom: 12px;
+  }
+
+  .aboutChallenge__gallery-col-2 .aboutChallenge__gallery-item {
+    height: 206px;
+  }
+
+  .aboutOffer__content {
+    padding-right: 12px;
+  }
+
+  .aboutOffer__gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .aboutOffer__gallery-col-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .aboutOffer__gallery-col-2 .aboutOffer__gallery-item:first-child {
+    margin-bottom: 12px;
+    margin-right: 12px;
+    height: 208px;
+    max-width: 160px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+
+  .aboutOffer__gallery-col-2 .aboutOffer__gallery-item:last-child {
+    height: 208px;
+  }
+
+  .aboutOffer__gallery-col-1 .aboutOffer__gallery-item {
+    max-width: 100%;
+    height: 235px;
+    margin-right: 0;
+  }
+
+  .aboutWhy {
+    margin-bottom: 125px;
+  }
+
+  .aboutWhy .about__title {
+    margin-bottom: 15px;
+  }
+
+  .aboutWhy__box {
+    text-align: left;
+    margin-right: 29px;
+  }
+
+  .aboutWhy__box-title {
+    font-size: 22px;
+    line-height: 30px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+
+  .aboutWhy__box-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .aboutWhy__box-img {
+    height: 60px;
+    margin-bottom: 12px;
+  }
+
+  .aboutWhy__box-img img {
+    max-height: 60px;
+  }
+
+  .aboutPartners .about__text {
+    margin-bottom: 68px;
+  }
+
+  .aboutPartners .about__title {
+    margin-bottom: 15px;
+  }
+}
