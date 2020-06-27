@@ -12,6 +12,12 @@ body, html {
 
 }
 
+
+.slick-slide {
+	outline: none;
+}
+
+
 .input-number__minus {
     margin-left: 9px;
     margin-right: 6px;
@@ -189,10 +195,10 @@ body, html {
 .md-form.password {
      .md-form__icon {
          display: flex !important;
-         background: url("../img/view.svg") no-repeat !important;
+         background: url("../img/view.svg") no-repeat center !important;
          right: 14px;
          width: 20px;
-         height: 14px;
+         height: 100%;
         background-size: cover;
         cursor: pointer;
      }
@@ -200,7 +206,7 @@ body, html {
 
  .md-form.password.view {
     .md-form__icon {
-        background: url("../img/no-view.svg") no-repeat !important;
+        background: url("../img/no-view.svg") no-repeat center !important;
 
     }
  }
@@ -208,15 +214,21 @@ body, html {
  
 .md-form.password.validate_true {
     .md-form__icon {
-        background: url("../img/view-color.svg") no-repeat !important;
+        background: url("../img/view-color.svg") no-repeat center !important;
     }
 } 
  
 .md-form.password.validate_true.view {
     .md-form__icon {
-        background: url("../img/no-view-color.svg") no-repeat !important;
+        background: url("../img/no-view-color.svg") no-repeat center !important;
     }
 } 
+
+// .md-form.password .md-form__icon {
+//     height: 100%;
+//     background-position-y: center !important;
+// }
+
 
 
 // checkbox

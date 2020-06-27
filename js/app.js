@@ -215,3 +215,103 @@ $(window).on("load resize", function () {
 
     
 });
+
+// igor scripts
+
+$('.slider_reviews').slick({
+    centerMode: true,
+    dots: false,
+    arrows:true,
+    slidesToShow: 3,
+    responsive: [
+    {
+            breakpoint: 991.98,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 767.98,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: false,
+                dots: true
+            }
+        }
+    ]
+});
+
+$("body").on('click', '[href*="#"]', function(e){
+    var fixed_offset = 100;
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 500);
+    e.preventDefault();
+});
+
+
+$(document).ready(function(){
+    $(".pane_header").click(function(){
+        $(this).next(".subitem").slideToggle().siblings(".subitem:visible").slideUp();
+        $(this).toggleClass("active");      
+        $(".span-minus-plus").toggleClass("minus plus");
+        $(this).siblings(".pane_header").removeClass("active");                   
+    });
+});
+
+$('#menu-toggle').click(function(){
+    $(this).toggleClass('open');
+})
+
+$("#menu-toggle").click(function() {
+    $(this).toggleClass("active");
+    $(".overlay").toggleClass("open");
+
+    $("body").toggleClass("locked");
+});
+$('.overlay').click(function() {
+    $(this).removeClass('open');
+    $('#menu-toggle').removeClass('active');
+    $('#menu-toggle').removeClass('open');
+});
+$(window).scroll(function(){
+    $('body').toggleClass('scroll_bar', $(this).scrollTop() > 0);
+});
+
+(function() {
+    // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+    if (!String.prototype.trim) {
+        (function() {
+            // Make sure we trim BOM and NBSP
+            var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+            String.prototype.trim = function() {
+                return this.replace(rtrim, '');
+            };
+        })();
+    }
+
+    [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+            classie.add( inputEl.parentNode, 'input--filled' );
+        }
+
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+    } );
+
+    function onInputFocus( ev ) {
+        classie.add( ev.target.parentNode, 'input--filled' );
+    }
+
+    function onInputBlur( ev ) {
+        if( ev.target.value.trim() === '' ) {
+            classie.remove( ev.target.parentNode, 'input--filled' );
+        }
+    }
+})();
