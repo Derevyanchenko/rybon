@@ -2994,6 +2994,7 @@ html {
 }
 
 .auth .btn {
+  border: none;
   font-weight: 600;
   font-size: 20px;
   line-height: 56px;
@@ -3086,6 +3087,10 @@ html {
     margin-top: 32px;
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .auth.register {
+    min-height: 667px;
   }
 }
 
