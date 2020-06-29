@@ -413,13 +413,18 @@ body, html {
     }
 
     .secondaryHeader {
-        height: 204px;
+        padding-top: 65px;
+        padding-bottom: 45px;
+        min-height: 204px;
+        height: auto;
+        box-sizing: border-box;
     }
     
     .secondaryHeader__title {
         margin-top: 20px;
         font-size: 36px;
         line-height: 47px;
+        margin-top: 0;
     }
 
     .secondaryContent {

@@ -18,7 +18,7 @@ button:not(.slick-arrow), a:not(.slick-arrow) {
 }
 
 .btn_arrow:hover {
-    transform: scale(1.1);
+    background: #FFD282;
 }
 
 .add-review-js:hover {
@@ -33,15 +33,7 @@ footer ul li a:hover {
     opacity: 0.7;
 }
 
-.input-number__plus,
-.input-number__minus {
-    transition: all 0.2s ease;
-}
 
-.input-number__plus:hover,
-.input-number__minus:hover {
-    transform: scale(1.1);
-}
 
 .news__watchMore:hover {
     background: #DFB66C;

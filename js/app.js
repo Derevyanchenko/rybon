@@ -122,30 +122,28 @@ $(document).mouseup(function (event) {
 
 // faq
 
-$(".faq__item-top").on("click", function(e) {
+$(".faq__item").on("click", function(e) {
 
-    e.preventDefault();
 
     let
         that = $(this),
         submenu = $(".faq__submnenu"),
-        that_submenu = that.siblings(submenu);
+        that_submenu = that.find(submenu);
 
     if ( that_submenu.is(":visible") ) {
         $(".faq__item-top").removeClass("active");
         $(".faq__item").removeClass("open");
-        that.parent().removeClass("open");
+        that.removeClass("open");
         submenu.slideUp(300)
     } else {
         $(".faq__item-top").removeClass("active");
         $(".faq__item").removeClass("open");
-        that.parent().addClass("open");
-        that.addClass("active");
+        that.addClass("open");
+        that.find(".faq__item-top").addClass("active");
         submenu.slideUp(300)
-        that.siblings(submenu).slideDown(300);
+        that.find(submenu).slideDown(300);
     }
 
-    return false;
 
 });
 
